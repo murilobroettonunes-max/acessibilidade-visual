@@ -1,127 +1,54 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA - Site Dinâmico</title>
 
-    <title>Introdução à Inteligência Artificial</title>
-
-
-
-    <style>
-
-        body {
-
-            font-family: Arial, sans-serif;
-
-            background-color: #ffffff;
-
-            color: #111111;
-
-            line-height: 1.6;
-
-            font-size: 1rem;
-
-        }
-
-
-
-        header, main, footer {
-
-            max-width: 800px;
-
-            margin: 0 auto;
-
-            padding: 16px;
-
-        }
-
-
-
-        header {
-
-            background-color: #f2f2f2;
-
-        }
-
-
-
-        footer {
-
-            background-color: #f2f2f2;
-
-            margin-top: 20px;
-
-        }
-
-
-
-        a:focus, button:focus {
-
-            outline: 3px solid #005fcc;
-
-            outline-offset: 2px;
-
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
-
 
 <body>
 
+<header class="topo">
+    <h1>🤖 Inteligência Artificial</h1>
 
+    <div class="botoes">
+        <button onclick="mudarTema()">🌙 Tema</button>
+        <button onclick="mudarTexto()">✨ Curiosidade</button>
+    </div>
+</header>
 
-    <header>
+<main>
 
-        <h1>Bem-vindo ao meu site</h1>
-
-    </header>
-
-
-
-    <main>
-
-        <h2>O que é Inteligência Artificial?</h2>
-
-
-
-        <p>
-
-            Inteligência Artificial (IA) é uma área da computação que desenvolve sistemas capazes de realizar
-
-            tarefas que normalmente exigem inteligência humana, como reconhecer padrões, aprender com dados e tomar decisões.
-
+    <section class="card">
+        <h2>O que é IA?</h2>
+        <p id="texto">
+            Inteligência Artificial é a capacidade de máquinas aprenderem, analisarem dados e tomarem decisões.
         </p>
+    </section>
 
+    <section class="card destaque">
+        <h2>Onde está presente?</h2>
+        <ul>
+            <li>📱 Smartphones</li>
+            <li>🎬 Netflix / YouTube</li>
+            <li>🗺️ Mapas e GPS</li>
+            <li>🤖 Chatbots</li>
+        </ul>
+    </section>
 
+    <section class="card">
+        <img src="ia.jpg" alt="IA visual">
+    </section>
 
-        <img src="ia.jpg" alt="Ilustração representando redes neurais de inteligência artificial" width="100%">
+</main>
 
+<footer>
+    <p>Feito por Murilo Broetto Nunes 🚀</p>
+</footer>
 
-
-        <p>
-
-            A IA está presente em assistentes virtuais, recomendações de vídeos e sistemas de busca.
-
-        </p>
-
-    </main>
-
-
-
-    <footer>
-
-        <p>Autor da página: Murilo Broetto Nunes</p>
-
-    </footer>
-
-
+<script src="script.js"></script>
 
 </body>
-
 </html>
